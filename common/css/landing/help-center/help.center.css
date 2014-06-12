@@ -1,0 +1,297 @@
+/*------------------------------------*\
+   $RESETS
+\*------------------------------------*/
+html, body {
+  overflow-x: hidden;
+  /* prevents horizontal scroll bars */
+  -ms-overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* disable webkit tap highlight */
+  height: 100%;
+  /* fixes focus scrolling in Safari (OS X) */ }
+
+body {
+  position: relative; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+/*------------------------------------*\
+   $SCSS VARIABLES / MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+   $FRAMEWORK
+\*------------------------------------*/
+.clear {
+  clear: both; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.container {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 960px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 960px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 960px; } }
+/*------------------------------------*\
+   $RESPONSIVE GRID CLASSES
+\*------------------------------------*/
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-left: 0;
+  padding-right: 0; }
+
+/*------------------------------------*\
+   $FONTS & ICONS
+\*------------------------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("http://preview.avery.com/vgnfiles/op/en_us/css/landing/help-center/icomoon.eot?-sf1q6h");
+  src: url("http://preview.avery.com/vgnfiles/op/en_us/css/landing/help-center/icomoon.eot?#iefix-sf1q6h") format("embedded-opentype"), url("http://preview.avery.com/vgnfiles/op/en_us/css/landing/help-center/icomoon.woff?-sf1q6h") format("woff"), url("http://preview.avery.com/vgnfiles/op/en_us/css/landing/help-center/icomoon.ttf?-sf1q6h") format("truetype"), url("http://preview.avery.com/vgnfiles/op/en_us/css/landing/help-center/icomoon.svg?-sf1q6h#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-bubble:before {
+  content: "\e601"; }
+
+/*------------------------------------*\
+   $HELP CENTER HERO
+\*------------------------------------*/
+#helpCenter {
+  color: #474a50;
+  font-size: 16px;
+  /*------------------------------------*\
+   $HELP CENTER ACCORDION
+\*------------------------------------*/ }
+.panel-group {
+  margin-bottom: 0; 
+}
+  #helpCenter h1 {
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold; }
+  #helpCenter h2 {
+    color: #000;
+    font-size: 1.25em;
+    margin-top: 0; }
+  #helpCenter a {
+    color: #0080bf;
+    text-decoration: none;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out; }
+    #helpCenter a:hover {
+      color: #6aa6ff; }
+  #helpCenter article {
+    margin-bottom: 30px; }
+  #helpCenter .live-chat {
+    padding-top: 10px; }
+    #helpCenter .live-chat a {
+      font-size: 11px; }
+      #helpCenter .live-chat a span {
+        color: gray;
+        padding-right: 5px; }
+  #helpCenter #searchHelp .form-group {
+    background: #f4f4f4;
+    padding: 25px;
+    position: relative; }
+  #helpCenter #searchHelp input[type=text] {
+    border-radius: 8px;
+    -moz-box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #7f7f7f;
+    font-size: 1em;
+    height: 48px;
+    padding: 0 10px;
+    width: 100%; }
+  #helpCenter #searchHelp .searchsubmit {
+    background: #5BAF07;
+    background: -moz-linear-gradient(top, #5baf07 0%, #004d00 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5baf07), color-stop(100%, #004d00));
+    background: -webkit-linear-gradient(top, #5baf07 0%, #004d00 100%);
+    background: -o-linear-gradient(top, #5baf07 0%, #004d00 100%);
+    background: -ms-linear-gradient(top, #5baf07 0%, #004d00 100%);
+    background: linear-gradient(to bottom, #5baf07 0%, #004d00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5BAF07', endColorstr='#004D00',GradientType=0 );
+    width: 56px;
+    height: 47px;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    color: #fff;
+    cursor: hand;
+    cursor: pointer; }
+  #helpCenter .help-hero-img {
+    padding: 20px; }
+  #helpCenter .help-topics ul {
+    list-style-type: none; }
+    #helpCenter .help-topics ul li {
+      display: block;
+      line-height: 1.5em; }
+  #helpCenter .help-jumpto-wrap {
+    padding-right: 20px; }
+  #helpCenter .help-jumpto,
+  #helpCenter .help-faq {
+    background: #f4f4f4;
+    padding: 25px 20px; }
+  #helpCenter .help-faq ul {
+    margin-bottom: 30px; }
+  #helpCenter .help-general,
+  #helpCenter .help-avery-software,
+  #helpCenter .help-partner-software {
+    background: #f4f4f4;
+    padding: 15px 0; }
+    #helpCenter .help-general h2,
+    #helpCenter .help-avery-software h2,
+    #helpCenter .help-partner-software h2 {
+      border-bottom: 1px solid #dbdbdb;
+      padding-bottom: 12px;
+      padding-left: 20px; }
+  #helpCenter #accordion1,
+  #helpCenter #accordion2,
+  #helpCenter #accordion3 {
+    padding: 0 10px; }
+    #helpCenter #accordion1 .glyphicon-plus,
+    #helpCenter #accordion1 .glyphicon-minus,
+    #helpCenter #accordion2 .glyphicon-plus,
+    #helpCenter #accordion2 .glyphicon-minus,
+    #helpCenter #accordion3 .glyphicon-plus,
+    #helpCenter #accordion3 .glyphicon-minus {
+      color: #fff;
+      position: absolute;
+      left: -5px;
+      font-size: 1px;
+      margin-right: 5px;
+      padding: 1px 1px 2px 2px;
+      top: 2px; }
+    #helpCenter #accordion1 .glyphicon-plus,
+    #helpCenter #accordion2 .glyphicon-plus,
+    #helpCenter #accordion3 .glyphicon-plus {
+      background: #4d7bc0; }
+    #helpCenter #accordion1 .glyphicon-minus,
+    #helpCenter #accordion2 .glyphicon-minus,
+    #helpCenter #accordion3 .glyphicon-minus {
+      background: #4d4d4d; }
+    #helpCenter .glyphicon-plus:before,
+    #helpCenter .glyphicon-minus:before {
+      font-size: 13px;
+    }
+    #helpCenter #accordion1 .panel,
+    #helpCenter #accordion2 .panel,
+    #helpCenter #accordion3 .panel {
+      background: none;
+      border: none;
+      border-radius: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      #helpCenter #accordion1 .panel.active,
+      #helpCenter #accordion2 .panel.active,
+      #helpCenter #accordion3 .panel.active {
+        background: #fff; }
+        #helpCenter #accordion1 .panel.active .panel-title a,
+        #helpCenter #accordion2 .panel.active .panel-title a,
+        #helpCenter #accordion3 .panel.active .panel-title a {
+          color: #4d4d4d;
+          outline: 0; }
+    #helpCenter #accordion1 .panel-default > .panel-heading,
+    #helpCenter #accordion2 .panel-default > .panel-heading,
+    #helpCenter #accordion3 .panel-default > .panel-heading {
+      background: none; }
+    #helpCenter #accordion1 .panel-title,
+    #helpCenter #accordion2 .panel-title,
+    #helpCenter #accordion3 .panel-title {
+      font-size: 1.125em;
+      padding-left: 15px;
+      position: relative; }
+      #helpCenter #accordion1 .panel-title a,
+      #helpCenter #accordion2 .panel-title a,
+      #helpCenter #accordion3 .panel-title a {
+        color: #4d7bc0;
+        display: block;
+        -webkit-transition: color 0.25s ease-in-out;
+        -moz-transition: color 0.25s ease-in-out;
+        -ms-transition: color 0.25s ease-in-out;
+        -o-transition: color 0.25s ease-in-out;
+        transition: color 0.25s ease-in-out; }
+        #helpCenter #accordion1 .panel-title a:hover,
+        #helpCenter #accordion2 .panel-title a:hover,
+        #helpCenter #accordion3 .panel-title a:hover {
+          color: #6aa6ff; }
+    #helpCenter #accordion1 .panel-collapse .panel-body,
+    #helpCenter #accordion2 .panel-collapse .panel-body,
+    #helpCenter #accordion3 .panel-collapse .panel-body {
+      border-top: none;
+      font-size: 1em;
+      padding: 5px 30px 10px 30px; }
+    #helpCenter #accordion1 .panel-body ul,
+    #helpCenter #accordion2 .panel-body ul,
+    #helpCenter #accordion3 .panel-body ul {
+      list-style-type: none; }
+      #helpCenter #accordion1 .panel-body ul li,
+      #helpCenter #accordion2 .panel-body ul li,
+      #helpCenter #accordion3 .panel-body ul li {
+        margin-bottom: 4px; }
+
+.panel-group .panel + .panel {
+  margin-top: 0; }
+
+/*------------------------------------*\
+   $HELP CENTER CONTACT
+\*------------------------------------*/
+.help-center-contact {
+  padding: 30px 0; }
+  .help-center-contact h2 {
+    margin-bottom: 15px; }
+  .help-center-contact .message,
+  .help-center-contact .call {
+    min-height: 100px;
+    padding: 5px 50px 10px 100px;
+    position: relative; }
+    .help-center-contact .message:before,
+    .help-center-contact .call:before {
+      content: "";
+      background: url(http://preview.avery.com/vgnfiles/images/help/contact-sprite.png) no-repeat;
+      background-position: 0 0;
+      height: 90px;
+      width: 70px;
+      position: absolute;
+      left: 0; }
+  .help-center-contact .call:before {
+    background-position: 0 -90px; }
